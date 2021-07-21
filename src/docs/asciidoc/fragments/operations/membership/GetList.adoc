@@ -1,0 +1,23 @@
+// Refs:
+:snippets: ../../../../../../build/generated-snippets
+:operation: findMemberships
+
+[[api-membership-getList]]
+=== Get List of memberships
+
+==== Example request
+
+include::{snippets}/{operation}/http-request.adoc[]
+
+==== Example response
+
+include::{snippets}/{operation}/http-response.adoc[]
+
+==== Error situations
+|===
+| HTTP Code | Cause | Reason
+
+| `+404+`
+| `+NoSuchMembershipException+`
+| 해당하는 아이디의 멤버십을 찾을수 없습니다.
+|===

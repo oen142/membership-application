@@ -1,0 +1,29 @@
+[[common-payloads-responses]]
+== Common Response body format
+
+[source,json]
+----
+{
+  "success" : <Boolean>,
+  "response" : <Object>,
+  "error" : <Object>
+}
+----
+
+=== Response fields
+
+|===
+| Path | Type | Description
+
+| `+success+`
+| `+Boolean+`
+| 해당 Http 응답의 성공/실패 여부를 나타냅니다.
+
+| `+response+`
+| `+Object+`
+| 해당 http 응답의 값을 반환합니다.
+
+| `+error+`
+| `+Object+`
+| http 응답의 에러가 났을 경우 반환하는 오브젝트 입니다.
+|===

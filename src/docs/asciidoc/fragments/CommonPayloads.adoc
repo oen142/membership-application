@@ -1,0 +1,4 @@
+include::common/Responses.adoc[]
+include::common/ErrorResponses.adoc[]
+include::common/ErrorCauses.adoc[]
+include::common/EnumTypes.adoc[]

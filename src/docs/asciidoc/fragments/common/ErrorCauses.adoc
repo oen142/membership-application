@@ -1,0 +1,19 @@
+[[common-payloads-error-causes]]
+== Common error causes
+|===
+| HTTP Code | Cause | Reason
+
+
+| `+400+`
+| `+IllegalRequestException+`
+| 클라이언트로부터 정확하지 않은 리퀘스트를 수신하였습니다.
+
+
+| `+400+`
+| `+HttpMessageNotReadableException+`
+| Http 메시지를 읽을수 없습니다.
+
+| `+404+`
+| `+ResourceNotFoundException+`
+| 해당 리소스를 찾을수 없습니다.
+|===

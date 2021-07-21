@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: Asia/Seoul
+        format_sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/kakao
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    cache:
+      host: localhost
+      port: 6379
+    session:
+      host: localhost
+      port: 6379
+  cache:
+    type: redis
+  session:
+    store-type: redis

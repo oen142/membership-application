@@ -1,0 +1,37 @@
+### 멤버십 가입을 합니다.
+POST http://localhost:5000/api/v1/membership
+Content-Type: application/json
+X-USER-Id: test009
+
+{
+  "membershipId": "shinsegae",
+  "membershipName": "shinsegaepoint",
+  "point": 1500
+}
+
+### 멤버십 List를 조회합니다.
+GET http://localhost:5000/api/v1/membership
+Content-Type: application/json
+X-USER-Id: test009
+
+### 멤버십 One 조회합니다.
+GET http://localhost:5000/api/v1/membership/shinsegae
+Content-Type: application/json
+X-USER-Id: test009
+
+### 포인트를 적립합니다.
+PUT http://localhost:5000/api/v1/membership/point
+Content-Type: application/json
+X-USER-Id: test008
+
+{
+  "membershipId": "shinsegae",
+  "amount": 1000
+}
+
+### 멤버십을 삭제합니다.
+DELETE http://localhost:5000/api/v1/membership/shinsegae
+Content-Type: application/json
+X-USER-Id: test004
+
+

@@ -1,0 +1,4 @@
+[[common-payloads-types]]
+=== Common types
+
+include::types/MembershipType.adoc[]

@@ -1,0 +1,42 @@
+[[common-payloads-error]]
+== Common Error response body format
+
+[source,json]
+----
+{
+  "success" : <Boolean>,
+  "response" : 'null'
+  "error" : {
+    "message" : <String>,
+    "status" : <Int>
+  }
+}
+----
+
+=== Response fields
+
+|===
+| Path | Type | Description
+
+| `+success+`
+| `+Boolean+`
+| http 응답의 성공여부를 결정합니다.
+
+| `+response+`
+| `+Object+`
+| error일 경우 null로 반환됩니다.
+
+
+| `+error+`
+| `+Object+`
+| error내용을 가지고 있습니다.
+
+| `+error.message+`
+| `+String+`
+| 응답 에러의 메시지를 나타냅니다.
+
+| `+error.status+`
+| `+String+`
+| http 상태 코드를 나타냅니다.
+
+|===

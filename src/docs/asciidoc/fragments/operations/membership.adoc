@@ -1,0 +1,8 @@
+[[api-membership]]
+== Membership
+
+include::membership/Create.adoc[]
+include::membership/GetList.adoc[]
+include::membership/Get.adoc[]
+include::membership/EarnPoint.adoc[]
+include::membership/Delete.adoc[]

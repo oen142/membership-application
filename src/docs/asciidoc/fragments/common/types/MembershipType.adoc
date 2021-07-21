@@ -1,0 +1,15 @@
+[[common-types-MembershipType]]
+=== `MembershipType`
+
+|===
+| Type | Value
+
+| `+cj+`
+| `+cj+`
+
+| `+spc+`
+| `+spc+`
+
+| `+shinsegae+`
+| `+shinsegae+`
+|===

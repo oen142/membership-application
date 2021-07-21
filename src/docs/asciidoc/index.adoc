@@ -1,0 +1,38 @@
+= Kakao-Pay API documentation
+Wani <oen142123@gmail.com>
+// Metadata:
+:description: 설명 페이지 입니다.
+:keywords: writing, documentation, publishing
+// Settings:
+:doctype: manpage
+:toc: left
+:toclevels: 4
+:sectlinks:
+:icons: font
+:idprefix:
+:idseparator: -
+// Refs:
+:url-project: https://github.com/oen142/kakao-programers
+:url-docs: {url-project}/README.md
+:url-issues: {url-project}/asciidoctor
+:snippets: ../../../build/generated-snippets
+// Macros:
+:operation-http-request-title: Example request
+:operation-http-response-title: Example response
+[[overview]]
+
+= Overview
+
+Api documentation of KaKao-Pay
+
+[[common-payloads]]
+= Common payloads
+
+List of common payloads in every request and/or responses
+
+include::fragments/CommonPayloads.adoc[]
+
+[[api-operagtions]]
+= API operations
+
+include::fragments/APIOperations.adoc[]
