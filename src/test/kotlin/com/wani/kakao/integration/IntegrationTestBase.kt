@@ -131,6 +131,7 @@ class IntegrationTestBase {
         return objectMapper.convertValue(body, klass)
     }
 
+    @Suppress("UNCHECKED_CAST")
     private fun parseResponse(
         respSpec: ValidatableResponse
     ): CommonResponse<*> {

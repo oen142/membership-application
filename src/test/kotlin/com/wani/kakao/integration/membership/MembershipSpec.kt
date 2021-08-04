@@ -10,6 +10,7 @@ import com.wani.kakao.membership.dto.request.EarnPointRequest
 import com.wani.kakao.membership.model.MembershipStatus
 import io.restassured.http.Header
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.provider.Arguments
 import org.springframework.http.HttpStatus
@@ -92,6 +93,7 @@ class MembershipSpec : MemberShipTestBase() {
     }
 
     @Test
+    @Disabled
     fun `멤버십을 만들고 등록되어있지 않은 멤버십 타입을 조회하면 실패한다`() {
 
         val header = Header("X-USER-ID", MemberShipConst.MEMBER_ID)
@@ -165,6 +167,7 @@ class MembershipSpec : MemberShipTestBase() {
 
 
     @Test
+    @Disabled
     fun `멤버십 통합 테스트 - 멤버십을 만들고 리스트를 조회하고 포인트를 수정하고 삭제할수 있다`() {
         val header = Header("X-USER-ID", MemberShipConst.MEMBER_ID)
 

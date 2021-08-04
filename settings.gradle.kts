@@ -1,1 +1,1 @@
-rootProject.name = "kakao"
+rootProject.name = "membership"
