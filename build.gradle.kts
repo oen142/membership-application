@@ -76,27 +76,6 @@ dependencies {
 }
 
 
-/*tasks.withType<org.asciidoctor.gradle.jvm.AsciidoctorTask> {
-    configurations(asciidoctorExtensions.name)
-    dependsOn(tasks.withType<Test>())
-    baseDirFollowsSourceFile()
-}
-tasks.test {
-    outputs.dir(snippetsDir)
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "1.8"
-    }
-}
-
-tasks.asciidoctor {
-    inputs.dir(snippetsDir)
-    val test by tasks
-    dependsOn(test)
-}*/
 
 
 tasks {
